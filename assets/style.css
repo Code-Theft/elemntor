@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap');
+
+*
+{
+    margin:0;
+}
+
+
+.pink
+{
+    color:rgb(231, 12, 121);
+    padding: 2px 10px 2px 0;
+
+}
+
+.wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color:#fff;
+    background-color: #000;
+    font-family: 'Space Mono';
+    
+  }
+  
+  .typing-demo {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: 'Space Mono', monospace;
+    font-size: 40px;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
